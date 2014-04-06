@@ -1,0 +1,79 @@
+#appletApp-cancel {
+	display: block;
+	font-family: Arial, tahoma, sans-serif;
+	font-size: 14px;
+	zoom: 1;
+	position: absolute;
+	z-index: 9999;
+	right: 0px;
+	top: 0px;
+	width: 30px;
+	height: 30px;
+	background: #868585 url("http://applet.landgraf-paul.com/img/close.png") no-repeat 50% 50%;
+	cursor: pointer;
+	padding: 0;
+}
+
+#appletApp-frame {
+	width: 100%;
+	border: 0;
+	clear: both;
+	height: 297px;
+	display: block;
+}
+
+#appletApp-container {
+	display: none;
+	zoom: 1;
+	position: fixed;
+	z-index: 9999999;
+	width: 370px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	margin-top: -185px;
+	margin-left: -150px;
+	-webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.35);
+	box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.35);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #ffffff;
+	padding: 0;
+	border: 1px solid #949292;
+	transition: opacity 0.3s ease;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-ms-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+}
+
+[draggable] {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	/* Required to make elements draggable in old WebKit */
+	-khtml-user-drag: element;
+	-webkit-user-drag: element;
+}
+
+#appletApp-header {
+	cursor: move;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	clear: both;
+	background-color: #868585;
+	border-bottom: 1px solid #949292;
+	overflow: hidden;
+}
+
+#appletApp-header span {
+	margin-left: 7px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
