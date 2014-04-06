@@ -476,7 +476,6 @@
 
 		switch (site) {
 			case "tme.eu":
-				data.site_id = 9;
 				data.image = tools.exists('.pip-main-info-foto img') ? document.querySelector('.pip-main-info-foto img').getAttribute('src') : '';
 				data.dataSheet = tools.exists('.document .filename a') ? '//' + document.location.host + document.querySelector('.document .filename a').getAttribute('href') : '';
 				data.manufacturer = tools.getTextNode(document.querySelectorAll('.pip-main-info-text .value')[2]);

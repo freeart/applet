@@ -18,7 +18,7 @@
 	width: 100%;
 	border: 0;
 	clear: both;
-	height: 297px;
+	height: 280px;
 	display: block;
 }
 
@@ -28,11 +28,11 @@
 	position: fixed;
 	z-index: 9999999;
 	width: 370px;
-	height: 300px;
+	height: 280px;
 	top: 50%;
 	left: 50%;
-	margin-top: -185px;
-	margin-left: -150px;
+	margin-top: -140px;
+	margin-left: -185px;
 	-webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.35);
 	-moz-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.35);
 	box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.35);

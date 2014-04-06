@@ -14,8 +14,6 @@
 
 			<fieldset>
 				<input type="hidden" name="link" value="<?php echo $_GET['link'] ?>">
-				<input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
-				<input type="hidden" name="site_id" value="<?php echo $_GET['site_id'] ?>">
 				<table>
 					<colgroup>
 						<col width="105">
@@ -32,125 +30,77 @@
 						</td>
 					</tr>
 					<tr>
-						<td><label>Цена за единицу</label></td>
+						<td><label>Price</label></td>
 						<td>
 							<input required="required" class="positive" type="text" name="price"
 								   value="<?php echo str_replace(PHP_EOL, '', $_GET['price']) ?>">
 						</td>
 					</tr>
 					<tr>
-						<td><label>Валюта</label></td>
+						<td><label>Currency</label></td>
 						<td>
 							<select required="required" name="currency">
-								<option value="" selected="selected">Выберите валюту</option>
-								<option
-									value="RUB"<?php if ($_GET['currency'] == 'RUB') echo " selected=\"selected\"" ?>>Р
-									Рубль
-								</option>
+								<option value="" selected="selected">Select currency</option>
 								<option
 									value="EUR"<?php if ($_GET['currency'] == 'EUR') echo " selected=\"selected\"" ?>>&euro;
-									Евро
+									Euro
 								</option>
 								<option
 									value="USD"<?php if ($_GET['currency'] == 'USD') echo " selected=\"selected\"" ?>>$
-									Доллар
+									US Dollar
 								</option>
 								<option
 									value="GBP"<?php if ($_GET['currency'] == 'GBP') echo " selected=\"selected\"" ?>>&pound;
-									Фунт стерлингов
+									Pound Sterling
 								</option>
 							</select>
 						</td>
 					</tr>
 					<tr>
-						<td><label>Наличие</label></td>
+						<td><label>In stock</label></td>
 						<td>
 							<input required="required" class="positive-integer" type="text" name="in_stock"
 								   value="<?php echo str_replace(PHP_EOL, '', $_GET['in_stock']) ?>">
 						</td>
 					</tr>
 					<tr>
-						<td><label>Производитель</label></td>
+						<td><label>Manufacturer</label></td>
 						<td colspan="2">
 							<input required="required" type="text" name="manufacturer"
 								   value="<?php echo str_replace(PHP_EOL, '', $_GET['manufacturer']) ?>">
 						</td>
 					</tr>
 					<tr>
-						<td><label>Код продавца</label></td>
-						<td colspan="2">
-							<input required="required" type="text" name="site_article"
-								   value="<?php echo str_replace(PHP_EOL, '', $_GET['site_article']) ?>">
-						</td>
-					</tr>
-					<tr>
-						<td><label>Артикул производителя</label></td>
+						<td><label>Article</label></td>
 						<td colspan="2">
 							<input required="required" type="text" name="article"
 								   value="<?php echo str_replace(PHP_EOL, '', $_GET['article']) ?>">
 						</td>
 					</tr>
 					<tr>
-						<td><label>Дистрибьютор</label></td>
+						<td><label>Distributor</label></td>
 						<td colspan="2">
 							<input required="required" type="text" name="distributor"
 								   value="<?php echo str_replace(PHP_EOL, '', $_GET['distributor']) ?>">
 						</td>
 					</tr>
 					<tr>
-						<td><label>Тех. документация</label></td>
+						<td><label>DataSheet</label></td>
 						<td colspan="2">
 							<input type="text" name="dataSheet"
 								   value="<?php echo str_replace(PHP_EOL, '', $_GET['dataSheet']) ?>">
 						</td>
 					</tr>
 					<tr>
-						<td><label>Описание</label></td>
+						<td><label>Description</label></td>
 						<td colspan="2">
 							<input type="text" name="description"
 								   value="<?php echo str_replace(PHP_EOL, '', $_GET['description']) ?>">
 						</td>
 					</tr>
 					<tr>
-						<td colspan="3">
-							<hr>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="3" style="padding: 0">
-							<table class="inner-table">
-								<tr>
-									<td width="105"><label>Количество</label></td>
-									<td width="50">
-										<input required="required" type="text" class="positive-integer" name="number"
-											   value="<?php echo str_replace(PHP_EOL, '', $_GET['qty']) ?>">
-									</td>
-
-									<td width="*"></td>
-
-									<td width="90"><label>Коэффициент</label></td>
-									<td width="50">
-										<input type="text" class="positive" name="ratio">
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td><label>Срок поставки</label></td>
-						<td colspan="2">
-							<input required="required" type="text" name="order_date">
-						</td>
-					</tr>
-					<tr>
-						<td><label>Примечание</label></td>
-						<td colspan="2">
-							<input type="text" name="note">
-						</td>
-					</tr>
-					<tr>
 						<td colspan="3" style="text-align: right">
-							<button id="save" type="submit">Сохранить</button>
+							<button id="save" type="submit">Share</button>
 						</td>
 					</tr>
 					</tbody>
