@@ -16,7 +16,7 @@
 				<input type="hidden" name="link" value="<?php echo $_GET['link'] ?>">
 				<table>
 					<colgroup>
-						<col width="105">
+						<col width="85">
 						<col width="*">
 						<col width="90">
 					</colgroup>
